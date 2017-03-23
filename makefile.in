@@ -1,0 +1,18 @@
+# Compilers (only C is needed)
+CC = gcc
+OBJ_TIME = timing.o 
+## 
+LIB0 = -lgfortran -lrt -lm 
+## Linker 
+LINK = gcc
+
+# ar 
+AR = ar rv
+RANLIB = ranlib
+
+## libraries: blas, lapack
+LIBLAPACK = -L//home/yuanzhe/Desktop/lapack-3.5.0 -llapack -lrefblas
+
+## SuiteSparse dir
+## if empty, evsl will be compiled without rational filters
+SUITESPARSE_DIR = /home/yuanzhe/Desktop/SuiteSparse
